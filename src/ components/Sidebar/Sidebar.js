@@ -76,7 +76,6 @@ const Sidebar = () => {
                         <li>
                             <a href="">Your Privacy Choices</a>
                         </li>
-                        <li><a href="">Cookies</a></li>
                     </ul>
                 </div>
 
