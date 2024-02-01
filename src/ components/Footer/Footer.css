@@ -9,9 +9,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .disclaimer-premium .text {
     flex-shrink: 0;
 }
+
 .disclaimer-premium .disclaimer-premium__title {
     color: #ffffff;
     text-transform: uppercase;
@@ -29,7 +31,7 @@
 .disclaimer-premium button {
     background-color: #ffffff;
     color: #000000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     padding: 14px 30px;
     border: 0;
@@ -37,6 +39,18 @@
     cursor: pointer;
 }
 
-.disclaimer-premium button:hover{
+.disclaimer-premium button:hover {
     transform: scale(1.04);
+}
+
+@media only screen and (max-width: 1024px) {
+    .disclaimer-premium button {
+        font-size: 12px;
+    }
+    .disclaimer-premium .disclaimer-premium__title{
+        font-size: 10px;
+    }
+    .disclaimer-premium .disclaimer-premium__subtitle{
+        font-size: 12px;
+    }
 }

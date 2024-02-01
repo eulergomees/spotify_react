@@ -15,7 +15,7 @@
 
 .header__navigation .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
 }
 
@@ -30,8 +30,7 @@
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: #131313;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -62,7 +61,7 @@
 .header__search input {
     background: transparent;
     border: none;
-    padding: 0px 100px 0 12px;
+    padding: 0 100px 0 12px;
     color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -100,4 +99,28 @@
 
 .header__login .login:hover {
     transform: scale(1.04);
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__search {
+        width: 20vh;
+    }
+}
+
+@media only screen and (max-width: 859px) {
+    .header__search {
+        width: 12vh;
+    }
+    .header__navigation{
+        margin-left: 280px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__search {
+        width: 10vh;
+    }
+    .header__navigation{
+        margin-left: 280px;
+    }
 }
